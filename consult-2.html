@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Надёжный пароль и вход в банк — ФинГрамот</title>
+  <meta name="description" content="Как придумать пароль, который трудно угадать, и почему код из SMS нельзя никому называть.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <span>Удобный режим для чтения:</span>
+    <div class="access">
+      <button class="btn-access" type="button" data-size="normal" aria-pressed="true">Текст</button>
+      <button class="btn-access" type="button" data-size="big" aria-pressed="false">ТЕКСТ</button>
+      <button class="btn-access" type="button" data-contrast aria-pressed="false">Контраст</button>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="index.html">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#ffd21f"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#143c6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="index.html#cycle">Консультации</a>
+      <a href="index.html#help">Если обманули</a>
+      <a href="index.html#contacts">Куда звонить</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container page-head__grid">
+      <div>
+        <p class="crumbs"><a href="index.html">Главная</a> → Консультация 2</p>
+        <span class="num">Консультация 2 · по коду</span>
+        <h1>Надёжный пароль и вход в банк</h1>
+        <p class="lead">Пароль — это ключ от вашего банка. Если ключ угадают, деньги могут уйти без вашего ведома.</p>
+      </div>
+      <div class="page-head__art" aria-hidden="true">
+        <img src="images/c2.svg" alt="" width="480" height="300">
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="rule">
+      <span class="rule__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#1f5fa8"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#ffd21f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <p class="rule__label">Главное правило</p>
+        <p class="rule__text">Код из SMS — это ваш ключ. Никому его не называйте.</p>
+      </div>
+    </div>
+
+    <h2>Суть консультации</h2>
+    <p>Вход в банк через интернет защищают два «замка»: пароль, который вы придумываете сами, и код из SMS, который банк присылает при входе. Эта консультация объясняет, как сделать первый замок крепким и почему второй нельзя никому отдавать — даже «сотруднику банка».</p>
+
+    <div class="lockwrap">
+    <div class="paywall" id="paywall">
+      <div class="paywall__card">
+      <div class="paywall__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="2.5" fill="#1f5fa8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#143c6b" stroke-width="2.4"/><circle cx="12" cy="15" r="1.8" fill="#ffd21f"/></svg>
+      </div>
+      <h2>Дальше — по коду доступа</h2>
+      <p>Полная консультация включает: как выбрать пароль, который трудно угадать, приём для запоминания, правила для кода из SMS и действия, если пароль кто-то узнал.</p>
+      <button class="btn btn--primary" type="button" data-open-access>Получить полный доступ</button>
+      </div>
+    </div>
+
+    <div id="locked-content" class="locked" aria-hidden="true">
+      <h2>Какой пароль выбрать</h2>
+      <p>Пароль должен быть длинным и не связанным с вами. Даты рождения, имена детей и номера телефонов мошенники пробуют первыми.</p>
+
+      <div class="recipe">
+        <div class="recipe__step">
+          <b>Шаг 1. Придумайте фразу</b>
+          <p>«Летом я собрал 7 кг грибов»</p>
+        </div>
+        <span class="recipe__arrow" aria-hidden="true">→</span>
+        <div class="recipe__step recipe__step--result">
+          <b>Шаг 2. Возьмите первые буквы</b>
+          <p>ЛяС7кг!</p>
+        </div>
+      </div>
+      <p>Такой пароль легко вспомнить, а угадать его почти невозможно.</p>
+      <div class="compare">
+        <div class="compare__col compare__col--bad">
+          <p class="compare__title">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ffd21f"/><path d="M8 8l8 8M16 8l-8 8" stroke="#143c6b" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Слабый пароль
+          </p>
+          <ul>
+            <li><b>123456</b> — самый распространённый в мире, взламывается мгновенно.</li>
+            <li><b>Дата рождения</b> — её легко узнать из интернета или при разговоре.</li>
+            <li><b>Имя внука</b> — мошенники собирают такие сведения заранее.</li>
+            <li><b>Один пароль везде</b> — взломают один сайт, получат доступ ко всем.</li>
+          </ul>
+        </div>
+        <div class="compare__col compare__col--good">
+          <p class="compare__title">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0e6b3c"/><path d="M7.5 12.5l3 3 6-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Надёжный пароль
+          </p>
+          <ul>
+            <li><b>Длинный</b> — от 12 знаков: чем длиннее, тем труднее угадать.</li>
+            <li><b>Разный на каждом сайте</b> — банк, Госуслуги, почта: везде свой.</li>
+            <li><b>Не связан с вами</b> — никакие даты и имена.</li>
+            <li><b>Хранится в записной книжке</b> — в надёжном месте дома, не на мониторе.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Приём для запоминания</h2>
+      <p>Возьмите любую фразу, которая легко запоминается, и превратите её в пароль. Например, фраза «Летом я собираю 7 корзин грибов» превращается в пароль <b>ЛяС7кг!</b> — первые буквы слов, цифра и знак. Такой пароль и крепкий, и запоминается легко.</p>
+      <div class="note">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0e6b3c"/><path d="M7.5 12.5l3 3 6-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>Совет:</b> запишите пароли в бумажную записную книжку и храните там, где их найдёт только вы. Это надёжнее, чем хранить в заметках телефона.</div>
+      </div>
+
+      <h2>Код из SMS — второй замок</h2>
+      <p>Когда вы входите в банк, банк присылает на телефон код из SMS. Это защита: даже если пароль кто-то узнает, без кода с вашего телефона он в банк не попадёт. Поэтому код из SMS — это как ключ от квартиры: его нельзя никому давать, даже на минуту.</p>
+      <figure class="figure">
+        <img src="images/c2.svg" alt="" width="480" height="300">
+        <figcaption>Пароль — первый замок, код из SMS — второй. Отдав кому-то код, вы отдаёте ключ.</figcaption>
+      </figure>
+      <div class="note note--warn">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l10 18H2z" fill="#ffd21f" stroke="#143c6b" stroke-width="1.6" stroke-linejoin="round"/><rect x="11.2" y="10" width="1.6" height="5" rx="0.8" fill="#143c6b"/><circle cx="12" cy="17.5" r="1.1" fill="#143c6b"/></svg>
+        <div><b>Важно:</b> если вам звонят и просят назвать код из SMS «для отмены операции» — это мошенники. Код нужен только вам для входа в банк. Положите трубку и перезвоните в банк сами.</div>
+      </div>
+
+      <h2>Что делать, если пароль кто-то узнал</h2>
+      <ol class="steps">
+        <li><b>Смените пароль</b> в настройках банка — сразу, не откладывая.</li>
+        <li><b>Смените этот же пароль</b> на всех сайтах, где он использовался.</li>
+        <li><b>Проверьте последние операции</b> в банке. Если есть незнакомые списания — позвоните в банк по номеру с карты.</li>
+      </ol>
+
+      <h2>Частые вопросы</h2>
+      <details>
+        <summary>Сложный пароль трудно запомнить. Как быть?</summary>
+        <p>Используйте приём с фразой (см. выше) — он даёт и надёжность, и простоту. А ещё запишите пароли в бумажную книжку.</p>
+      </details>
+      <details>
+        <summary>Банк сам предложил сохранить пароль в браузере (программе, через которую вы открываете сайты). Это безопасно?</summary>
+        <p>Если компьютером дома пользуетесь только вы — это можно. Но надёжнее бумажная записная книжка: она не подключена к интернету, и взломать её нельзя.</p>
+      </details>
+      <details>
+        <summary>Пришло SMS с кодом, но я никуда не входил. Опасно ли это?</summary>
+        <p>Кто-то пытается войти в ваш банк. Позвоните в банк по номеру с карты и сообщите об этом. Код никому не называйте.</p>
+      </details>
+
+    <section class="practice">
+      <h2>Проверьте себя</h2>
+      <div class="quiz">
+        <div class="q" data-explain="Имя и год рождения мошенники пробуют первыми — такие данные легко узнать. Пароль из первых букв фразы запомнить легко, а угадать трудно.">
+          <p class="q__text">Какой пароль надёжнее?</p>
+          <div class="q__opts">
+            <button type="button">«Саша1975» — имя и год рождения</button>
+            <button type="button" data-correct>«ЛяС7кг!» — первые буквы фразы «Летом я собрал 7 кг грибов»</button>
+            <button type="button">«Пароль» — простое слово, его легко запомнить</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+        <div class="q" data-explain="Настоящий банк никогда не спрашивает код из SMS. Положите трубку и позвоните в банк сами по номеру с карты.">
+          <p class="q__text">Звонят «из банка»: «Назовите код из SMS, мы отменяем подозрительную операцию». Что делать?</p>
+          <div class="q__opts">
+            <button type="button">Назвать код — операция же подозрительная</button>
+            <button type="button" data-correct>Положить трубку и перезвонить в банк самому по номеру с карты</button>
+            <button type="button">Спросить имя сотрудника и назвать код</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+        <div class="q" data-explain="Кто-то пытается войти в ваш банк. Код никому не называйте и сообщите в банк по номеру с карты.">
+          <p class="q__text">Пришло SMS с кодом, хотя вы никуда не входили. Что делать?</p>
+          <div class="q__opts">
+            <button type="button">Ничего — код же никому не назвал</button>
+            <button type="button" data-correct>Позвонить в банк по номеру с карты и сообщить о попытке входа</button>
+            <button type="button">Ввести код на сайте банка для проверки</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+      </div>
+    </section>
+    </div>
+    </div>
+
+    <nav class="pager" aria-label="Другие консультации">
+      <a class="btn btn--ghost" href="consult-1.html">← Консультация 1</a>
+      <a class="btn btn--primary" href="consult-3.html">Консультация 3 →</a>
+    </nav>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <div>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+      <p>Простые материалы о безопасности денег в интернете и по телефону.</p>
+    </div>
+    <div>
+      <p><a href="index.html">Главная</a></p>
+      <p><a href="index.html#cycle">Все консультации</a></p>
+      <p><a href="index.html#contacts">Куда звонить</a></p>
+    </div>
+    <p class="footer__note">© 2026 ФинГрамот. Материалы носят справочный характер. Номера телефонов сверяйте с обратной стороны карты или с официальных сайтов.</p>
+  </div>
+</footer>
+
+<dialog class="dialog" id="access-dialog">
+  <form class="dialog__form" id="access-form">
+    <h2>Код доступа</h2>
+    <p>Введите код, который вам выдал консультант. Без него остальные консультации не открываются.</p>
+    <label for="code">Код доступа</label>
+    <input id="code" type="text" inputmode="numeric" autocomplete="off" required>
+    <p class="dialog__error" id="code-error" hidden>Код неверный. Проверьте цифры.</p>
+    <div class="dialog__btns">
+      <button class="btn btn--primary" type="submit">Открыть</button>
+      <button class="btn btn--ghost" type="button" data-close>Отмена</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>

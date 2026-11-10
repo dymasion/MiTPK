@@ -1,539 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ФинГрамот — памятка по цифровой и финансовой грамотности в интернете</title>
-<meta name="description" content="Сайт-памятка по консультации населения: безопасность банковских счетов и средств граждан, профилактика телефонного мошенничества. Консультант — Решетников Дмитрий Андреевич, группа 25П-1.">
-<meta name="author" content="Решетников Дмитрий Андреевич">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b4ca1'/%3E%3Cpath d='M16 6l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V9l8-3z' fill='%23ffdd2d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФинГрамот — как не отдать деньги мошенникам</title>
+  <meta name="description" content="Простые консультации о том, как защитить деньги на карте, телефон и данные от мошенников.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ================= ИКОНКИ ================= -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
-    </symbol>
-    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/><path d="M6 15h4"/>
-    </symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/>
-    </symbol>
-    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/>
-    </symbol>
-    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/><path d="M12 9v4M12 17h.01"/>
-    </symbol>
-    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M20 6L9 17l-5-5"/>
-    </symbol>
-    <symbol id="i-call" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/>
-    </symbol>
-    <symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 21h18M4 10v8M9 10v8M15 10v8M20 10v8M2 10h20L12 3 2 10z"/>
-    </symbol>
-    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
-    </symbol>
-    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/>
-    </symbol>
-    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/>
-    </symbol>
-    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M10 13a5 5 0 007.5.5l3-3a5 5 0 00-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 00-7.5-.5l-3 3a5 5 0 007 7L12 19"/>
-    </symbol>
-    <symbol id="i-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 11v3a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1z"/><path d="M15 8a5 5 0 010 8"/>
-    </symbol>
-    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.9"/>
-    </symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
-    </symbol>
-    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-    </symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 6 10-6"/>
-    </symbol>
-    <symbol id="i-qr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/>
-    </symbol>
-    <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M20 7H5a2 2 0 010-4h13v4"/><path d="M3 5v14a2 2 0 002 2h15V7H5"/><circle cx="17" cy="14" r="1.5"/>
-    </symbol>
-  </defs>
-</svg>
-
-<!-- ================= ШАПКА ================= -->
-<header class="header">
-  <div class="container header__inner">
-    <a class="logo" href="#top">
-      <span class="logo__mark"><svg><use href="#i-shield"/></svg></span>
-      <span class="logo__text">
-        <span class="logo__name">ФинГрамот</span>
-        <span class="logo__sub">памятка по безопасности в интернете</span>
-      </span>
-    </a>
-
-    <nav class="nav" id="nav">
-      <a href="#about">О консультации</a>
-      <a href="#topics">Темы</a>
-      <a href="#victim">Если стали жертвой</a>
-      <a href="#checklist">Чек-лист</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
-
-    <div class="header__cta">
-      <a class="btn btn--accent btn--sm" href="#consult">Записаться на консультацию</a>
-      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+<div class="topbar">
+  <div class="container topbar__in">
+    <span>Удобный режим для чтения:</span>
+    <div class="access">
+      <button class="btn-access" type="button" data-size="normal" aria-pressed="true">Текст</button>
+      <button class="btn-access" type="button" data-size="big" aria-pressed="false">ТЕКСТ</button>
+      <button class="btn-access" type="button" data-contrast aria-pressed="false">Контраст</button>
     </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="index.html">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#ffd21f"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#143c6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#about">О сайте</a>
+      <a href="#cycle">Консультации</a>
+      <a href="#help">Если обманули</a>
+      <a href="#contacts">Куда звонить</a>
+    </nav>
   </div>
 </header>
 
-<!-- ================= ПЕРВЫЙ ЭКРАН ================= -->
-<section class="hero" id="top">
-  <div class="container hero__grid">
-    <div>
-      <div class="hero__badge"><b>МиТПК</b> 09.02.07 «Информационные системы и программирование» · группа 25П-1</div>
-      <h1>Основы цифровой и <span>финансовой</span> грамотности в интернете</h1>
-      <p class="hero__lead">
-        Памятка и консультация для населения: как безопасно пользоваться банковскими картами,
-        онлайн-банкингом и как распознать мошенников, которые звонят и пишут в мессенджерах.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#topics">Смотреть темы консультаций</a>
-        <a class="btn btn--ghost" href="#checklist">Чек-лист безопасности</a>
-      </div>
-      <div class="hero__facts">
-        <div>
-          <div class="fact__num">2</div>
-          <div class="fact__text">тематические консультации</div>
-        </div>
-        <div>
-          <div class="fact__num">8</div>
-          <div class="fact__text">правил в чек-листе</div>
-        </div>
-        <div>
-          <div class="fact__num">0 ₽</div>
-          <div class="fact__text">консультация бесплатна</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero__art" aria-hidden="true">
-      <svg viewBox="0 0 520 420" role="img">
-        <defs>
-          <linearGradient id="gCard" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#1668d6"/><stop offset="100%" stop-color="#06306a"/>
-          </linearGradient>
-          <linearGradient id="gPhone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#eef2f8"/>
-          </linearGradient>
-        </defs>
-
-        <rect x="26" y="24" width="468" height="372" rx="64" fill="#eaf1fb"/>
-        <circle cx="446" cy="86" r="46" fill="#ffdd2d" opacity=".65"/>
-        <circle cx="72" cy="352" r="40" fill="#00a651" opacity=".22"/>
-        <circle cx="92" cy="84" r="22" fill="#e8464f" opacity=".18"/>
-
-        <!-- банковская карта -->
-        <g transform="rotate(-7 250 190)">
-          <rect x="116" y="96" width="278" height="172" rx="20" fill="url(#gCard)"/>
-          <rect x="140" y="128" width="42" height="32" rx="6" fill="#ffe08a"/>
-          <rect x="140" y="176" width="96" height="9" rx="4.5" fill="#ffffff" opacity=".55"/>
-          <rect x="140" y="196" width="66" height="9" rx="4.5" fill="#ffffff" opacity=".3"/>
-          <circle cx="338" cy="228" r="19" fill="#ffffff" opacity=".85"/>
-          <circle cx="358" cy="228" r="19" fill="#ffdd2d" opacity=".85"/>
-        </g>
-
-        <!-- щит с галочкой -->
-        <g transform="translate(56 108)">
-          <circle cx="52" cy="52" r="50" fill="#ffffff" opacity=".96"/>
-          <path d="M52 22l24 9v18c0 15-10 26.5-24 31-14-4.5-24-16-24-31V31l24-9z" fill="#00a651"/>
-          <path d="M42 52l7 8 14-15" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-
-        <!-- телефон с предупреждением -->
-        <g transform="rotate(6 372 300)">
-          <rect x="314" y="214" width="128" height="190" rx="26" fill="url(#gPhone)" stroke="#e4e9f2" stroke-width="2"/>
-          <rect x="352" y="226" width="52" height="8" rx="4" fill="#d7dee9"/>
-          <rect x="330" y="250" width="96" height="52" rx="12" fill="#fdecec"/>
-          <path d="M360 266l14 24h-28l14-24z" fill="#e8464f"/>
-          <rect x="366" y="272" width="3.4" height="8" rx="1.7" fill="#fff"/>
-          <circle cx="367.7" cy="284" r="1.8" fill="#fff"/>
-          <rect x="330" y="312" width="84" height="10" rx="5" fill="#e2e8f0"/>
-          <rect x="330" y="330" width="60" height="10" rx="5" fill="#e2e8f0"/>
-          <rect x="330" y="356" width="96" height="30" rx="12" fill="#0b4ca1"/>
-        </g>
-
-        <!-- маленькие пилюли -->
-        <g transform="translate(436 268)">
-          <rect x="0" y="0" width="66" height="34" rx="17" fill="#fff8d6" stroke="#ffdd2d" stroke-width="2"/>
-          <circle cx="20" cy="17" r="6" fill="#ffdd2d"/>
-          <rect x="34" y="14" width="20" height="6" rx="3" fill="#c7b45a"/>
-        </g>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ЧТО ВНУТРИ ================= -->
-<section class="section section--tint">
-  <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow">Что внутри</span>
-      <h2>Памятка, которая помогает действовать</h2>
-      <p class="lead">Ниже — всё, что нужно знать обычному человеку, чтобы не потерять деньги и личные данные в интернете.</p>
-    </div>
-
-    <div class="grid-3">
-      <article class="card">
-        <div class="card__icon icon-blue"><svg><use href="#i-card"/></svg></div>
-        <h3>Безопасность счетов</h3>
-        <p>Как настроить защиту карты и онлайн-банкинга, как отличить настоящий сайт банка от поддельного и что делать при подозрительном списании.</p>
-      </article>
-      <article class="card">
-        <div class="card__icon icon-yellow"><svg><use href="#i-phone"/></svg></div>
-        <h3>Защита от мошенников</h3>
-        <p>Типичные сценарии обмана: «Госуслуги», «служба безопасности банка», «родственник в беде». Как реагировать, чтобы не потерять деньги и нервы.</p>
-      </article>
-      <article class="card">
-        <div class="card__icon icon-green"><svg><use href="#i-doc"/></svg></div>
-        <h3>Пошаговый алгоритм</h3>
-        <p>Если мошенники уже успели: что делать в первые часы — по порядку, без суеты. Заявление в банк, полиция, возврат средств.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= О КОНСУЛЬТАЦИИ ================= -->
-<section class="section" id="about">
-  <div class="container about">
-    <div class="about__text">
-      <span class="eyebrow">О консультации</span>
-      <h2>Кто консультирует и как проходит встреча</h2>
-      <p>
-        Консультация проводится в рамках учебной практики по дисциплине
-        <b>МиТПК</b> (методика и технология профессионального консультирования).
-        Тема — <b>«Основы цифровой и финансовой грамотности в интернете»</b>.
-      </p>
-      <p>
-        Консультант объясняет сложные вещи простым языком, без технических терминов,
-        и помогает составить личный «список безопасности» для своих аккаунтов и карт.
-      </p>
-      <ul class="about__list">
-        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Очно или дистанционно — в удобном для вас формате.</li>
-        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Разбор ваших реальных ситуаций и вопросов.</li>
-        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Памятка-чек-лист, которую можно распечатать и повесить дома.</li>
-        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Ответы на вопросы по телефону, в Telegram или на встрече.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Как проходит консультация</h3>
-      <p style="margin-bottom:18px">Обычно это 4 коротких шага — примерно 30–40 минут.</p>
-      <ol class="steps-list">
-        <li><div><b>Знакомство и запрос</b><span>Вы рассказываете, что случилось или что хотите настроить.</span></div></li>
-        <li><div><b>Разбор рисков</b><span>Проверяем, как устроены ваши банковские и личные аккаунты.</span></div></li>
-        <li><div><b>Практика</b><span>Включаем лимиты, подтверждение по SMS, уведомления и другие настройки.</span></div></li>
-        <li><div><b>Памятка и поддержка</b><span>Вы получаете чек-лист и контакты для экстренной помощи.</span></div></li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ТЕМЫ КОНСУЛЬТАЦИЙ ================= -->
-<section class="section section--tint" id="topics">
-  <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow">Темы консультаций</span>
-      <h2>Два направления разговора</h2>
-      <p class="lead">Каждая консультация — это конкретные правила, которые работают в реальной жизни, а не в теории.</p>
-    </div>
-
-    <div class="topics">
-      <!-- Тема 1 -->
-      <article class="topic topic--1">
-        <div class="topic__top">
-          <span class="topic__num">1</span>
-          <h3>Обеспечение безопасности банковских счетов и средств граждан</h3>
-          <p>Как сохранить деньги на карте и в онлайн-банкинге и не отдать их злоумышленникам.</p>
-        </div>
-        <div class="topic__body">
-          <div class="topic__block">
-            <h4>Что разберём</h4>
-            <ul>
-              <li>Как устроена защита карты и что такое подтверждение операций по SMS.</li>
-              <li>Настройка лимитов, виртуальных карт и уведомлений о списаниях.</li>
-              <li>Как отличить официальный сайт банка от фишингового — по адресу, «замку» и домену.</li>
-              <li>Безопасные онлайн-покупки: как проверять продавца и не сохранять карту на чужих сайтах.</li>
-            </ul>
-          </div>
-          <div class="topic__block">
-            <h4>Практические советы</h4>
-            <ul>
-              <li>Никогда не сообщайте код из СМС — даже «сотрудникам банка».</li>
-              <li>Заведите отдельную карту для онлайн-покупок с небольшим лимитом.</li>
-              <li>Не пользуйтесь публичным Wi-Fi для входа в банк и не вводите данные на чужих сайтах.</li>
-            </ul>
-          </div>
-          <p class="topic__note"><b>Важно:</b> если деньги списали без вашего подтверждения — блокируйте карту в приложении и звоните на горячую линию банка как можно быстрее.</p>
-        </div>
-      </article>
-
-      <!-- Тема 2 -->
-      <article class="topic topic--2">
-        <div class="topic__top">
-          <span class="topic__num">2</span>
-          <h3>Профилактика телефонного мошенничества и защита от уловок</h3>
-          <p>Как узнать мошенника за несколько секунд и не попасть под психологическое давление.</p>
-        </div>
-        <div class="topic__body">
-          <div class="topic__block">
-            <h4>Что разберём</h4>
-            <ul>
-              <li>Сценарии «служба безопасности банка», «Госуслуги», «ЦБ», «родственник попал в беду».</li>
-              <li>Фальшивые ссылки в SMS и мессенджерах, поддельные приложения и «QR-коды для оплаты».</li>
-              <li>Правило трёх секунд: положить трубку и перезвонить самому по номеру с карты.</li>
-              <li>Что говорить и как вести себя, чтобы вас не вывели из себя и не выманили код.</li>
-            </ul>
-          </div>
-          <div class="topic__block">
-            <h4>Практические советы</h4>
-            <ul>
-              <li>Мошенник всегда торопит и просит secrecy — «никому не говорите».</li>
-              <li>Не пересылайте коды, ссылки и «голосовые сообщения с просьбой» даже близким.</li>
-              <li>Установите в семье правило: о крупных переводах всегда решаем вместе.</li>
-            </ul>
-          </div>
-          <p class="topic__note"><b>Важно:</b> настоящий банк не просит коды, не переводит деньги «себе на безопасный счёт» и не требует установить приложение по ссылке.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ЕСЛИ СТАЛИ ЖЕРТВОЙ ================= -->
-<section class="section" id="victim">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Экстренный порядок</span>
-      <h2>Если вы стали жертвой мошенников</h2>
-      <p class="lead">Главное — действовать быстро. Каждая минута увеличивает шанс вернуть деньги.</p>
-    </div>
-
-    <div class="alert">
-      <div class="alert__icon"><svg><use href="#i-alert"/></svg></div>
+<main>
+  <!-- Первый экран -->
+  <section class="hero">
+    <div class="container hero__grid">
       <div>
-        <h3>Не переживайте — это не ваша вина</h3>
-        <p>Мошенники отлично имитируют банки, полицию и госуслуги. Не стесняйтесь обращаться за помощью: в России пострадавшие от мошенничества не считаются «виноватыми» в произошедшем.</p>
-      </div>
-    </div>
-
-    <div class="timeline">
-      <div class="tl-step tl-step--urgent">
-        <b>Заблокируйте карту</b>
-        <span>Через приложение банка, горячую линию или заблокируйте карту в банкомате. Это остановит дальнейшие списания.</span>
-      </div>
-      <div class="tl-step">
-        <b>Позвоните в банк</b>
-        <span>Сообщите о операции и уточните номер дела. Заявление о несанкционированной операции подайте в течение суток.</span>
-      </div>
-      <div class="tl-step">
-        <b>Обратитесь в полицию</b>
-        <span>Заявление в полицию по месту жительства (102 или 112). Это ключевой документ для возврата средств.</span>
-      </div>
-      <div class="tl-step">
-        <b>Смените пароли</b>
-        <span>Обновите пароли от банка, Госуслуг и почты, проверьте автоплатежи и подписки, отключите «восстановление по SMS».</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ЧЕК-ЛИСТ ================= -->
-<section class="section section--tint" id="checklist">
-  <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow">Чек-лист</span>
-      <h2>8 правил цифровой безопасности</h2>
-      <p class="lead">Пройдитесь по списку один раз — и базовая защита у вас уже настроена. Можно распечатать и повесить дома.</p>
-    </div>
-
-    <div class="checklist">
-      <div class="check-item"><span class="check-item__n">1</span><div><b>Код из СМС — это ключ от денег</b><span>Никогда не сообщайте его никому, даже сотрудникам банка.</span></div></div>
-      <div class="check-item"><span class="check-item__n">2</span><div><b>Включите лимиты и уведомления</b><span>Так вы заметите подозрительное списание сразу, а не через неделю.</span></div></div>
-      <div class="check-item"><span class="check-item__n">3</span><div><b>Заведите отдельную карту для интернета</b><span>С небольшим лимитом — даже при обмане потеря не станет критичной.</span></div></div>
-      <div class="check-item"><span class="check-item__n">4</span><div><b>Проверяйте адрес сайта</b><span>Официальный сайт банка — в закладках. Никаких «похожих» адресов из рекламы.</span></div></div>
-      <div class="check-item"><span class="check-item__n">5</span><div><b>Положите трубку и перезвоните сами</b><span>Не используйте номер из звонка — берите номер с карты или с сайта банка.</span></div></div>
-      <div class="check-item"><span class="check-item__n">6</span><div><b>Не пересылайте коды и ссылки</b><span>Даже близким: мошенники часто пишут «от мамы» или «от начальника».</span></div></div>
-      <div class="check-item"><span class="check-item__n">7</span><div><b>Обновляйте пароли и включите 2FA</b><span>Надёжный пароль + подтверждение по приложению, а не только по SMS.</span></div></div>
-      <div class="check-item"><span class="check-item__n">8</span><div><b>Не стесняйтесь перепроверять</b><span>Любой «срочный» вопрос — повод сначала уточнить официальным способом.</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ПОЛЕЗНЫЕ КОНТАКТЫ ================= -->
-<section class="section" id="contacts">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Экстренная помощь</span>
-      <h2>Куда звонить и писать</h2>
-      <p class="lead">Сохраните эти номера в телефоне — в нужный момент не будет времени искать их в интернете.</p>
-    </div>
-
-    <div class="contacts-grid">
-      <div class="contact-card">
-        <div class="contact-card__icon icon-red"><svg><use href="#i-alert"/></svg></div>
-        <b>112</b>
-        <span>Единый номер экстренных служб — работает даже без денег на счёте</span>
-      </div>
-      <div class="contact-card">
-        <div class="contact-card__icon icon-blue"><svg><use href="#i-bank"/></svg></div>
-        <b>102</b>
-        <span>Полиция — заявление о мошенничестве и проверка информации о звонке</span>
-      </div>
-      <div class="contact-card">
-        <div class="contact-card__icon icon-green"><svg><use href="#i-wallet"/></svg></div>
-        <b>8-800-300-30-00</b>
-        <span>Горячая линия Банка России — бесплатно, приём жалоб на действия банков</span>
-      </div>
-      <div class="contact-card">
-        <div class="contact-card__icon icon-yellow"><svg><use href="#i-shield"/></svg></div>
-        <b>8-800-300-00-88</b>
-        <span>ФинЦЕРТ (Банк России) — консультации по вопросам мошенничества</span>
-      </div>
-    </div>
-
-    <div class="notice">
-      <svg><use href="#i-info"/></svg>
-      <span>Перед печатью или раздачей памятки проверьте актуальность номеров на официальном сайте Банка России (cbr.ru) и МВД (mvd.ru) — они периодически обновляются.</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= КОНСУЛЬТАНТ И ЗАПИСЬ ================= -->
-<section class="section section--tint" id="consult">
-  <div class="container">
-    <div class="consult">
-      <div class="consult__left">
-        <div class="consult__avatar">РД</div>
-        <div>
-          <h3>Решетников Дмитрий Андреевич</h3>
-          <div class="consult__role">Консультант по цифровой и финансовой грамотности</div>
-          <div class="consult__role">Студент 2 курса, специальность 09.02.07 «Информационные системы и программирование», группа 25П-1</div>
+        <span class="hero__badge">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#1f5fa8"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#ffd21f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Защита денег для вас и вашей семьи
+        </span>
+        <h1>Как не отдать деньги мошенникам</h1>
+        <p class="lead">Простые правила, которые помогут защитить деньги на карте, телефон и личные данные. Первая консультация — бесплатно.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="consult-1.html">Начать с первой консультации</a>
+          <a class="btn btn--ghost" href="#cycle">Что внутри цикла</a>
         </div>
-        <ul class="consult__list">
-          <li><svg><use href="#i-send"/></svg><span>Telegram: <b>@dmitriy</b></span></li>
-          <li><svg><use href="#i-mail"/></svg><span>reshetnikov.consult@mail.ru</span></li>
-          <li><svg><use href="#i-call"/></svg><span>Телефон: +7 (___) ___-__-__</span></li>
-          <li><svg><use href="#i-clock"/></svg><span>Консультации — бесплатно, по договорённости</span></li>
-        </ul>
-        <div class="consult__qr">
-          <svg class="qr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <rect x="2" y="2" width="8" height="8"/><rect x="14" y="2" width="8" height="8"/><rect x="2" y="14" width="8" height="8"/>
-            <path d="M14 14h3v3h-3zM18 18h3v3h-3zM14 19h2v2h-2zM19 14h2v2h-2z"/>
+        <div class="facts">
+          <div><b>5</b><span>консультаций</span></div>
+          <div><b>1</b><span>бесплатная</span></div>
+          <div><b>10–15</b><span>минут на каждую</span></div>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <img src="images/hero.svg" alt="" width="480" height="420">
+      </div>
+    </div>
+  </section>
+
+  <!-- Введение: как пользоваться сайтом -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>О чём этот сайт</h2>
+      <p class="lead">Мошенники обманывают не самых доверчивых, а самых занятых: торопят, пугают и не дают подумать. Здесь собраны простые правила, которые занимают 10–15 минут на тему — и защищают деньги лучше любых сложных советов.</p>
+      <div class="howto">
+        <div class="howto__item">
+          <span class="howto__num">1</span>
+          <h3>Выберите тему</h3>
+          <p>Каждая консультация отвечает на один вопрос: звонок из «банка», пароль, поддельный сайт, покупки, украденные деньги.</p>
+        </div>
+        <div class="howto__item">
+          <span class="howto__num">2</span>
+          <h3>Прочитайте правила</h3>
+          <p>Всё написано простыми словами. Главное правило каждой темы выделено жёлтым блоком — его достаточно запомнить.</p>
+        </div>
+        <div class="howto__item">
+          <span class="howto__num">3</span>
+          <h3>Проверьте себя</h3>
+          <p>В конце каждой консультации есть небольшой тренажёр: он покажет, как вы поступите в похожей ситуации.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Цикл консультаций -->
+  <section class="section section--tint" id="cycle">
+    <div class="container">
+      <h2>Консультации по порядку</h2>
+      <p class="lead">Начинайте с первой — она бесплатная и самая важная: именно телефонные звонки обманывают чаще всего.</p>
+
+      <a class="featured" href="consult-1.html">
+        <div class="featured__art" aria-hidden="true">
+          <img src="images/c1.svg" alt="" width="480" height="300">
+        </div>
+        <div class="featured__body">
+          <span class="featured__hint">Начните отсюда</span>
+          <div class="card__top">
+            <span class="card__num">1</span>
+            <span class="tag tag--free">Бесплатно</span>
+          </div>
+          <h3>Телефонные мошенники</h3>
+          <p>Как распознать звонок «из банка», «из полиции» или «от родственника» и что делать, чтобы не отдать деньги.</p>
+          <span class="btn btn--primary">Читать консультацию →</span>
+        </div>
+      </a>
+
+      <div class="cards">
+        <a class="card" href="consult-2.html">
+          <img class="card__img" src="images/c2.svg" alt="" width="480" height="300">
+          <div class="card__body">
+            <div class="card__top">
+              <span class="card__num">2</span>
+              <span class="tag tag--lock">По коду</span>
+            </div>
+            <h3>Надёжный пароль и вход в банк</h3>
+            <p>Как придумать пароль, который трудно угадать, и зачем нужен код из SMS.</p>
+            <span class="card__go">Читать →</span>
+          </div>
+        </a>
+        <a class="card" href="consult-3.html">
+          <img class="card__img" src="images/c3.svg" alt="" width="480" height="300">
+          <div class="card__body">
+            <div class="card__top">
+              <span class="card__num">3</span>
+              <span class="tag tag--lock">По коду</span>
+            </div>
+            <h3>Поддельные сайты и ссылки</h3>
+            <p>Как отличить настоящий сайт банка от подделки и почему нельзя нажимать ссылки из SMS.</p>
+            <span class="card__go">Читать →</span>
+          </div>
+        </a>
+        <a class="card" href="consult-4.html">
+          <img class="card__img" src="images/c4.svg" alt="" width="480" height="300">
+          <div class="card__body">
+            <div class="card__top">
+              <span class="card__num">4</span>
+              <span class="tag tag--lock">По коду</span>
+            </div>
+            <h3>Безопасные покупки и платежи</h3>
+            <p>Что нельзя сообщать при оплате, как проверить магазин и зачем нужны уведомления.</p>
+            <span class="card__go">Читать →</span>
+          </div>
+        </a>
+        <a class="card" href="consult-5.html">
+          <img class="card__img" src="images/c5.svg" alt="" width="480" height="300">
+          <div class="card__body">
+            <div class="card__top">
+              <span class="card__num">5</span>
+              <span class="tag tag--lock">По коду</span>
+            </div>
+            <h3>Если деньги уже украли</h3>
+            <p>Пошаговый порядок действий: что сделать в первую очередь, чтобы спасти деньги.</p>
+            <span class="card__go">Читать →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Если обманули -->
+  <section class="section section--tint" id="help">
+    <div class="container">
+      <div class="help">
+        <div>
+          <h2>Если вас уже обманули</h2>
+          <p>Не ругайте себя: мошенники умеют обманывать даже опытных людей. Главное — действовать быстро, каждая минута работает против вас.</p>
+          <a class="btn btn--yellow" href="consult-5.html">Подробная инструкция</a>
+        </div>
+        <div class="help__art" aria-hidden="true">
+          <svg viewBox="0 0 300 260">
+            <circle cx="150" cy="130" r="115" fill="#0a5230"/>
+            <path d="M150 40l70 25v50c0 45-29 78-70 91-41-13-70-46-70-91V65l70-25z" fill="#fff"/>
+            <path d="M118 128l22 22 42-44" fill="none" stroke="#0e6b3c" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="248" cy="60" r="14" fill="#ffd21f"/>
+            <circle cx="52" cy="200" r="10" fill="#ffd21f"/>
           </svg>
-          <div>
-            <b>QR-код на памятку</b>
-            <span>Наведите камеру телефона — откроется этот сайт. На визитке код будет вести сюда же.</span>
-          </div>
         </div>
       </div>
-
-      <div class="consult__right">
-        <h3>Записаться на консультацию</h3>
-        <p>Заполните форму — и я свяжусь с вами, чтобы выбрать удобное время и формат.</p>
-
-        <form class="form" id="form" novalidate>
-          <div class="form__row">
-            <div class="field">
-              <label for="f-name">Имя</label>
-              <input id="f-name" name="name" type="text" placeholder="Как к вам обращаться" required>
-            </div>
-            <div class="field">
-              <label for="f-phone">Телефон</label>
-              <input id="f-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
-            </div>
-          </div>
-          <div class="field">
-            <label for="f-topic">Тема консультации</label>
-            <select id="f-topic" name="topic">
-              <option>Безопасность банковских счетов и средств</option>
-              <option>Профилактика телефонного мошенничества</option>
-              <option>Обе темы — общий разбор</option>
-              <option>Другой вопрос</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-msg">Коротко о вашей ситуации <span style="font-weight:400">(необязательно)</span></label>
-            <textarea id="f-msg" name="message" placeholder="Например: перевела деньги мошенникам, что делать?"></textarea>
-          </div>
-          <button class="btn btn--primary" type="submit">Отправить заявку</button>
-          <p class="form__hint">Форма работает в демонстрационном режиме и не отправляет данные на сервер. Самый быстрый способ — написать в Telegram.</p>
-          <div class="form__ok" id="form-ok">
-            <svg><use href="#i-check"/></svg>
-            <span>Спасибо! Заявка сохранена. Для реальной связи напишите консультанту в Telegram <b>@dmitriy</b> или позвоните по указанному номеру.</span>
-          </div>
-        </form>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= ПОДВАЛ ================= -->
+  <!-- Куда звонить -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <h2>Куда звонить</h2>
+      <p class="lead">Сохраните эти номера в телефоне заранее. Номер своего банка есть на обратной стороне карты.</p>
+      <div class="contacts">
+        <div class="contact"><b>102</b><span>Полиция</span></div>
+        <div class="contact"><b>112</b><span>Единый номер экстренных служб</span></div>
+        <div class="contact"><b>8-800-300-30-00</b><span>Приёмная Банка России, звонок бесплатный</span></div>
+      </div>
+      <p class="placeholder">Консультант: +7 (XXX) XXX-XX-XX · почта: mail@example.ru</p>
+    </div>
+  </section>
+</main>
+
 <footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <div class="logo">
-          <span class="logo__mark"><svg><use href="#i-shield"/></svg></span>
-          <span class="logo__text">
-            <span class="logo__name">ФинГрамот</span>
-            <span class="logo__sub">сайт-памятка по цифровой и финансовой грамотности</span>
-          </span>
-        </div>
-        <p style="margin-top:16px;max-width:340px;font-size:14.5px">
-          Учебный проект по дисциплине «МиТПК» (методика и технология профессионального консультирования).
-          Материалы носят информационно-разъяснительный характер.
-        </p>
-      </div>
-      <div>
-        <h4>Разделы</h4>
-        <ul>
-          <li><a href="#about">О консультации</a></li>
-          <li><a href="#topics">Темы консультаций</a></li>
-          <li><a href="#victim">Если стали жертвой</a></li>
-          <li><a href="#checklist">Чек-лист</a></li>
-          <li><a href="#contacts">Полезные контакты</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Консультант</h4>
-        <ul>
-          <li>Решетников Дмитрий Андреевич</li>
-          <li>Группа 25П-1 · специальность 09.02.07</li>
-          <li><a href="https://t.me/dmitriy">Telegram: @dmitriy</a></li>
-          <li><a href="mailto:reshetnikov.consult@mail.ru">reshetnikov.consult@mail.ru</a></li>
-        </ul>
-      </div>
+  <div class="container footer__in">
+    <div>
+      <span class="logo__name">ФинГрамот</span>
+      <p>Простые материалы о безопасности денег в интернете и по телефону.</p>
     </div>
-    <div class="footer__bottom">
-      <span>© 2026 · Учебная практика МиТПК</span>
-      <span>Консультации бесплатны · Не является публичной офертой</span>
+    <div>
+      <p><a href="index.html">Главная</a></p>
+      <p><a href="index.html#cycle">Все консультации</a></p>
+      <p><a href="index.html#contacts">Куда звонить</a></p>
     </div>
+    <p class="footer__note">© 2026 ФинГрамот. Материалы носят справочный характер. Номера телефонов сверяйте с обратной стороны карты или с официальных сайтов.</p>
   </div>
 </footer>
+
+<dialog class="dialog" id="access-dialog">
+  <form class="dialog__form" id="access-form">
+    <h2>Код доступа</h2>
+    <p>Введите код, который вам выдал консультант. Без него остальные консультации не открываются.</p>
+    <label for="code">Код доступа</label>
+    <input id="code" type="text" inputmode="numeric" autocomplete="off" required>
+    <p class="dialog__error" id="code-error" hidden>Код неверный. Проверьте цифры.</p>
+    <div class="dialog__btns">
+      <button class="btn btn--primary" type="submit">Открыть</button>
+      <button class="btn btn--ghost" type="button" data-close>Отмена</button>
+    </div>
+  </form>
+</dialog>
 
 <script src="script.js"></script>
 </body>

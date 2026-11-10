@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поддельные сайты и ссылки — ФинГрамот</title>
+  <meta name="description" content="Как отличить настоящий сайт банка от подделки и почему нельзя нажимать ссылки из SMS.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <span>Удобный режим для чтения:</span>
+    <div class="access">
+      <button class="btn-access" type="button" data-size="normal" aria-pressed="true">Текст</button>
+      <button class="btn-access" type="button" data-size="big" aria-pressed="false">ТЕКСТ</button>
+      <button class="btn-access" type="button" data-contrast aria-pressed="false">Контраст</button>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="index.html">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#ffd21f"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#143c6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="index.html#cycle">Консультации</a>
+      <a href="index.html#help">Если обманули</a>
+      <a href="index.html#contacts">Куда звонить</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container page-head__grid">
+      <div>
+        <p class="crumbs"><a href="index.html">Главная</a> → Консультация 3</p>
+        <span class="num">Консультация 3 · по коду</span>
+        <h1>Поддельные сайты и ссылки</h1>
+        <p class="lead">Подделка выглядит почти как настоящий сайт банка. Разница прячется в адресе сайта — и её можно заметить.</p>
+      </div>
+      <div class="page-head__art" aria-hidden="true">
+        <img src="images/c3.svg" alt="" width="480" height="300">
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="rule">
+      <span class="rule__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#1f5fa8"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#ffd21f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <p class="rule__label">Главное правило</p>
+        <p class="rule__text">Не нажимайте ссылки из сообщений. Заходите на сайт сами — через закладку или набрав адрес.</p>
+      </div>
+    </div>
+
+    <h2>Суть консультации</h2>
+    <p>Мошенники рассылают письма и SMS: «ваша карта заблокирована», «посылка ждёт оплаты», «вам назначена выплата». Внутри — ссылка на поддельный сайт. Он выглядит как настоящий, но всё, что вы введёте (пароль, данные карты), уйдёт мошенникам. Эта консультация учит замечать подделку.</p>
+
+    <div class="lockwrap">
+    <div class="paywall" id="paywall">
+      <div class="paywall__card">
+      <div class="paywall__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="2.5" fill="#1f5fa8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#143c6b" stroke-width="2.4"/><circle cx="12" cy="15" r="1.8" fill="#ffd21f"/></svg>
+      </div>
+      <h2>Дальше — по коду доступа</h2>
+      <p>Полная консультация включает: как выглядит подделка, как проверить адрес сайта, примеры опасных сообщений и порядок действий, если вы уже ввели данные на поддельном сайте.</p>
+      <button class="btn btn--primary" type="button" data-open-access>Получить полный доступ</button>
+      </div>
+    </div>
+
+    <div id="locked-content" class="locked" aria-hidden="true">
+      <h2>Как выглядит подделка</h2>
+      <p>Поддельный сайт копируют с настоящего: тот же логотип, те же цвета. Выдаёт его адрес сайта — строка вверху экрана.</p>
+
+      <div class="urlbar">
+        <div class="urlbar__line">
+          <span class="urlbar__part urlbar__part--bait">sberbank.</span><span class="urlbar__part urlbar__part--real">vozvrat-sredstv</span><span class="urlbar__part">.ru</span>
+        </div>
+        <div class="urlbar__legend">
+          <span><i class="urlbar__dot urlbar__dot--bait" aria-hidden="true"></i>Приманка — знакомое слово</span>
+          <span><i class="urlbar__dot urlbar__dot--real" aria-hidden="true"></i>Настоящее имя сайта</span>
+        </div>
+      </div>
+      <p>Читайте адрес с конца: настоящее имя сайта — то, что стоит перед последней частью «.ru». Всё, что перед ним, — приманка.</p>
+      <div class="compare">
+        <div class="compare__col compare__col--bad">
+          <p class="compare__title">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ffd21f"/><path d="M8 8l8 8M16 8l-8 8" stroke="#143c6b" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Поддельный сайт
+          </p>
+          <ul>
+            <li>Адрес с лишними словами: <b>sberbank.vozvrat-sredstv.ru</b>, <b>gosuslugi-plateg.ru</b>.</li>
+            <li>Сразу просит ввести данные карты или пароль.</li>
+            <li>Пугает: «счёт заблокирован», «действие срочно».</li>
+            <li>Открылся по ссылке из SMS или письма.</li>
+          </ul>
+        </div>
+        <div class="compare__col compare__col--good">
+          <p class="compare__title">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0e6b3c"/><path d="M7.5 12.5l3 3 6-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Настоящий сайт
+          </p>
+          <ul>
+            <li>Адрес короткий и точный: <b>sberbank.ru</b>, <b>gosuslugi.ru</b>.</li>
+            <li>Не требует сразу вводить данные карты.</li>
+            <li>Не пугает и не торопит.</li>
+            <li>Вы открыли его сами — через закладку или набрав адрес.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Как проверить адрес сайта</h2>
+      <p>Адрес сайта — это строка вверху экрана, в браузере (так называется программа, через которую вы открываете сайты). Читайте её с конца: настоящий адрес банка заканчивается на <b>sberbank.ru</b>, а всё, что перед этим через точку — лишние слова, которых у настоящего сайта не бывает.</p>
+      <figure class="figure">
+        <img src="images/c3.svg" alt="" width="480" height="300">
+        <figcaption>Проверьте адрес через увеличительное стекло: лишние слова перед названием банка — признак подделки.</figcaption>
+      </figure>
+      <div class="note">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0e6b3c"/><path d="M7.5 12.5l3 3 6-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>Совет:</b> сохраните сайт банка в закладки один раз — и заходите только через закладку. Так вы никогда не попадёте на подделку по ссылке.</div>
+      </div>
+
+      <h2>Опасные сообщения</h2>
+      <p>Вот типичные сообщения со ссылками. Все они — подделки:</p>
+      <ul>
+        <li><b>«Ваша посылка ждёт оплаты доставки»</b> — настоящие магазины не берут оплату по ссылке из SMS.</li>
+        <li><b>«Вашу карту заблокировали, перейдите по ссылке»</b> — банк блокирует карту только после вашего звонка, а не по ссылке.</li>
+        <li><b>«Вам назначена выплата, получите по ссылке»</b> — выплаты оформляются только в личном кабинете (ваша страница с данными) на официальном сайте.</li>
+        <li><b>«Ваш сын попал в ДТП, срочно переведите»</b> — перезвоните родственнику по обычному номеру.</li>
+      </ul>
+      <div class="note note--warn">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l10 18H2z" fill="#ffd21f" stroke="#143c6b" stroke-width="1.6" stroke-linejoin="round"/><rect x="11.2" y="10" width="1.6" height="5" rx="0.8" fill="#143c6b"/><circle cx="12" cy="17.5" r="1.1" fill="#143c6b"/></svg>
+        <div><b>Важно:</b> даже если сообщение пришло от знакомого — его телефон могли взломать. Лучше позвонить и спросить, отправлял ли он это сообщение.</div>
+      </div>
+
+      <h2>Что делать, если вы уже ввели данные на поддельном сайте</h2>
+      <ol class="steps">
+        <li><b>Сразу позвоните в банк</b> по номеру с обратной стороны карты и заблокируйте карту.</li>
+        <li><b>Смените пароли</b> от банка и Госуслуг.</li>
+        <li><b>Проверьте операции</b> по карте. Незнакомые списания — повод для заявления в банк.</li>
+      </ol>
+
+      <h2>Частые вопросы</h2>
+      <details>
+        <summary>Сайт открылся и выглядит как настоящий банк. Значит, он настоящий?</summary>
+        <p>Нет. Внешний вид копируют легко. Проверяйте только адрес сайта — и лучше заходить через закладку.</p>
+      </details>
+      <details>
+        <summary>В адресе написано «sberbank», но сайт поддельный. Как так?</summary>
+        <p>Слово «sberbank» может быть в любом месте адреса. Настоящий адрес — только тот, что заканчивается на sberbank.ru без лишних слов.</p>
+      </details>
+      <details>
+        <summary>Я нажал на ссылку, но ничего не вводил. Это опасно?</summary>
+        <p>Само нажатие не опасно. Опасно вводить данные. Просто закройте страницу и удалите сообщение.</p>
+      </details>
+
+    <section class="practice">
+      <h2>Проверьте себя</h2>
+      <div class="quiz">
+        <div class="q" data-explain="Настоящий адрес — тот, что стоит сразу после «www» или в начале. В «sberbank.vozvrat-sredstv.ru» настоящее имя сайта — «vozvrat-sredstv», а «sberbank» — приманка.">
+          <p class="q__text">Какой из этих адресов — настоящий сайт банка?</p>
+          <div class="q__opts">
+            <button type="button" data-correct>sberbank.ru</button>
+            <button type="button">sberbank.vozvrat-sredstv.ru</button>
+            <button type="button">sberbank-security.com</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+        <div class="q" data-explain="Не переходите по ссылкам из сообщений. Откройте сайт магазина сами по закладке и проверьте заказ там.">
+          <p class="q__text">Пришло SMS: «Ваша посылка ждёт оплаты доставки 299 ₽, перейдите по ссылке». Что делать?</p>
+          <div class="q__opts">
+            <button type="button">Перейти и оплатить — сумма небольшая</button>
+            <button type="button" data-correct>Открыть сайт магазина самому по закладке и проверить заказ там</button>
+            <button type="button">Позвонить по номеру из SMS</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+        <div class="q" data-explain="Само нажатие не опасно — опасно вводить данные. Закройте страницу и удалите сообщение.">
+          <p class="q__text">Вы нажали на ссылку из SMS, но ничего не вводили. Опасно ли это?</p>
+          <div class="q__opts">
+            <button type="button">Да, телефон теперь взломан</button>
+            <button type="button" data-correct>Нет, опасно только вводить данные — закройте страницу и удалите сообщение</button>
+            <button type="button">Да, нужно сразу блокировать карту</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+      </div>
+    </section>
+    </div>
+    </div>
+
+    <nav class="pager" aria-label="Другие консультации">
+      <a class="btn btn--ghost" href="consult-2.html">← Консультация 2</a>
+      <a class="btn btn--primary" href="consult-4.html">Консультация 4 →</a>
+    </nav>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <div>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+      <p>Простые материалы о безопасности денег в интернете и по телефону.</p>
+    </div>
+    <div>
+      <p><a href="index.html">Главная</a></p>
+      <p><a href="index.html#cycle">Все консультации</a></p>
+      <p><a href="index.html#contacts">Куда звонить</a></p>
+    </div>
+    <p class="footer__note">© 2026 ФинГрамот. Материалы носят справочный характер. Номера телефонов сверяйте с обратной стороны карты или с официальных сайтов.</p>
+  </div>
+</footer>
+
+<dialog class="dialog" id="access-dialog">
+  <form class="dialog__form" id="access-form">
+    <h2>Код доступа</h2>
+    <p>Введите код, который вам выдал консультант. Без него остальные консультации не открываются.</p>
+    <label for="code">Код доступа</label>
+    <input id="code" type="text" inputmode="numeric" autocomplete="off" required>
+    <p class="dialog__error" id="code-error" hidden>Код неверный. Проверьте цифры.</p>
+    <div class="dialog__btns">
+      <button class="btn btn--primary" type="submit">Открыть</button>
+      <button class="btn btn--ghost" type="button" data-close>Отмена</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Безопасные покупки и платежи — ФинГрамот</title>
+  <meta name="description" content="Что нельзя сообщать при оплате, как проверить магазин и зачем нужны уведомления о списаниях.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <span>Удобный режим для чтения:</span>
+    <div class="access">
+      <button class="btn-access" type="button" data-size="normal" aria-pressed="true">Текст</button>
+      <button class="btn-access" type="button" data-size="big" aria-pressed="false">ТЕКСТ</button>
+      <button class="btn-access" type="button" data-contrast aria-pressed="false">Контраст</button>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="index.html">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#ffd21f"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#143c6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="index.html#cycle">Консультации</a>
+      <a href="index.html#help">Если обманули</a>
+      <a href="index.html#contacts">Куда звонить</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container page-head__grid">
+      <div>
+        <p class="crumbs"><a href="index.html">Главная</a> → Консультация 4</p>
+        <span class="num">Консультация 4 · по коду</span>
+        <h1>Безопасные покупки и платежи</h1>
+        <p class="lead">Покупать в интернете удобно и безопасно — если знать, какие данные карты можно вводить, а какие нельзя.</p>
+      </div>
+      <div class="page-head__art" aria-hidden="true">
+        <img src="images/c4.svg" alt="" width="480" height="300">
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="rule">
+      <span class="rule__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.5-3.5 9.5-8 11-4.5-1.5-8-5.5-8-11V5l8-3z" fill="#1f5fa8"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#ffd21f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <p class="rule__label">Главное правило</p>
+        <p class="rule__text">Три цифры на обороте карты никому не называйте и нигде не вводите, кроме оплаты на сайте магазина.</p>
+      </div>
+    </div>
+
+    <h2>Суть консультации</h2>
+    <p>При оплате в интернете карта «открывается» по-разному: одни данные нужны магазину для оплаты, другие — только вам и банку. Эта консультация объясняет, что означают данные карты, как проверить магазин перед оплатой и зачем включать уведомления о списаниях.</p>
+
+    <div class="lockwrap">
+    <div class="paywall" id="paywall">
+      <div class="paywall__card">
+      <div class="paywall__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="2.5" fill="#1f5fa8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#143c6b" stroke-width="2.4"/><circle cx="12" cy="15" r="1.8" fill="#ffd21f"/></svg>
+      </div>
+      <h2>Дальше — по коду доступа</h2>
+      <p>Полная консультация включает: что означают данные карты, какие данные можно вводить при оплате, как проверить магазин, зачем нужны уведомления и лимиты.</p>
+      <button class="btn btn--primary" type="button" data-open-access>Получить полный доступ</button>
+      </div>
+    </div>
+
+    <div id="locked-content" class="locked" aria-hidden="true">
+      <h2>Что означают данные карты</h2>
+      <p>На карте есть три вида данных, и у каждого своя роль:</p>
+      <ul>
+        <li><b>Номер карты (16 цифр)</b> — как номер дома: по нему деньги находят вашу карту. Его просят при оплате.</li>
+        <li><b>Срок действия и имя</b> — тоже нужны для оплаты.</li>
+        <li><b>Три цифры на обороте</b> — как ключ от квартиры: по ним можно тратить деньги без карты. Их не нужно никому сообщать.</li>
+      </ul>
+      <figure class="figure">
+        <img src="images/c4.svg" alt="" width="480" height="300">
+        <figcaption>Спереди — номер и срок действия. Сзади — три цифры, которые нельзя никому называть.</figcaption>
+      </figure>
+
+      <div class="cardmap">
+        <div class="cardmap__card cardmap__card--front">
+          <span class="cardmap__chip" aria-hidden="true"></span>
+          <span class="cardmap__num">•••• 4921</span>
+          <span class="cardmap__label">Номер и срок — можно вводить при оплате</span>
+        </div>
+        <div class="cardmap__card cardmap__card--back">
+          <span class="cardmap__strip" aria-hidden="true"></span>
+          <span class="cardmap__cvv">•••</span>
+          <span class="cardmap__label cardmap__label--warn">Три цифры — никому и нигде, кроме оплаты</span>
+        </div>
+      </div>
+      <div class="note note--warn">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l10 18H2z" fill="#ffd21f" stroke="#143c6b" stroke-width="1.6" stroke-linejoin="round"/><rect x="11.2" y="10" width="1.6" height="5" rx="0.8" fill="#143c6b"/><circle cx="12" cy="17.5" r="1.1" fill="#143c6b"/></svg>
+        <div><b>Важно:</b> если звонящий «из банка» просит три цифры с оборота карты или код из SMS — это мошенник. Настоящему банку эти данные не нужны: они уже есть у него.</div>
+      </div>
+
+      <h2>Какие данные можно вводить при оплате</h2>
+      <div class="compare">
+        <div class="compare__col compare__col--good">
+          <p class="compare__title">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0e6b3c"/><path d="M7.5 12.5l3 3 6-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Можно вводить на сайте магазина
+          </p>
+          <ul>
+            <li>Номер карты</li>
+            <li>Срок действия</li>
+            <li>Три цифры с оборота — только в поле оплаты</li>
+          </ul>
+        </div>
+        <div class="compare__col compare__col--bad">
+          <p class="compare__title">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ffd21f"/><path d="M8 8l8 8M16 8l-8 8" stroke="#143c6b" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Нельзя сообщать никому
+          </p>
+          <ul>
+            <li>Код из SMS — он нужен только вам для входа</li>
+            <li>Пароль от банка</li>
+            <li>Три цифры с оборота — по телефону, в письме, в переписке на телефоне</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Как проверить магазин</h2>
+      <ol class="steps">
+        <li><b>Посмотрите отзывы</b> о магазине. Если их нет или все восторженные и одинаковые — осторожно.</li>
+        <li><b>Проверьте цену</b>. Если товар стоит в разы дешевле, чем в других магазинах, — это приманка.</li>
+        <li><b>Проверьте адрес сайта</b> — как в консультации 3: без лишних слов и опечаток.</li>
+        <li><b>Оплатите на странице банка</b>. После ввода данных карты магазин должен перевести вас на страницу банка для подтверждения.</li>
+      </ol>
+
+      <h2>Уведомления и лимиты</h2>
+      <p><b>Уведомления о списаниях</b> — это SMS от банка о каждой операции. Включите их: так вы сразу увидите чужое списание и успеете заблокировать карту.</p>
+      <p><b>Лимит</b> — это потолок суммы, которую можно потратить за день. Установите лимит в приложении банка (программе на телефоне): даже если мошенники узнают данные карты, украсть больше лимита они не смогут.</p>
+      <div class="note">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0e6b3c"/><path d="M7.5 12.5l3 3 6-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>Совет:</b> для покупок в незнакомых магазинах можно завести отдельную карту и держать на ней небольшую сумму. Основные деньги пусть лежат на другой карте.</div>
+      </div>
+
+      <h2>Частые вопросы</h2>
+      <details>
+        <summary>Магазин просит три цифры с оборота карты. Это нормально?</summary>
+        <p>В поле оплаты на сайте — да, это часть оплаты. По телефону, в письме или в переписке — нет, никогда.</p>
+      </details>
+      <details>
+        <summary>Пришло SMS о списании, которое я не делал. Что делать?</summary>
+        <p>Сразу позвоните в банк по номеру с карты и заблокируйте карту. Подробная инструкция — в консультации 5.</p>
+      </details>
+      <details>
+        <summary>Оплачивать картой в интернете вообще безопасно?</summary>
+        <p>Да, если магазин проверен, сайт настоящий, а уведомления включены. Проблемы возникают чаще всего из-за спешки и поддельных сайтов.</p>
+      </details>
+
+    <section class="practice">
+      <h2>Проверьте себя</h2>
+      <div class="quiz">
+        <div class="q" data-explain="Три цифры с оборота — ключ от карты. Они нужны только для оплаты на сайте магазина. Для «возвратов» и «подтверждений» их не спрашивают.">
+          <p class="q__text">Звонят «из магазина»: «Чтобы подтвердить возврат, назовите три цифры с оборота карты». Что делать?</p>
+          <div class="q__opts">
+            <button type="button">Назвать — это же возврат, а не оплата</button>
+            <button type="button" data-correct>Не называть: три цифры нужны только для оплаты на сайте магазина</button>
+            <button type="button">Спросить номер заказа и назвать цифры</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+        <div class="q" data-explain="Цена в 3 раза ниже — приманка. Так мошенники собирают данные карты. Проверьте магазин по отзывам и сравните цены в других местах.">
+          <p class="q__text">Товар стоит в 3 раза дешевле, чем в других магазинах. Что это значит?</p>
+          <div class="q__opts">
+            <button type="button">Выгодная покупка, надо брать</button>
+            <button type="button" data-correct>Приманка: так мошенники собирают данные карты. Проверьте магазин по отзывам</button>
+            <button type="button">Скидка к празднику, ничего страшного</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+        <div class="q" data-explain="Каждая минута на счету. Сразу позвоните в банк по номеру с карты и заблокируйте её. Подробно — в консультации 5.">
+          <p class="q__text">Пришло SMS о списании, которое вы не делали. Первое действие?</p>
+          <div class="q__opts">
+            <button type="button">Подождать — может, списание отменится</button>
+            <button type="button" data-correct>Сразу позвонить в банк по номеру с карты и заблокировать карту</button>
+            <button type="button">Написать в чат магазина</button>
+          </div>
+          <p class="q__result" hidden></p>
+        </div>
+      </div>
+    </section>
+    </div>
+    </div>
+
+    <nav class="pager" aria-label="Другие консультации">
+      <a class="btn btn--ghost" href="consult-3.html">← Консультация 3</a>
+      <a class="btn btn--primary" href="consult-5.html">Консультация 5 →</a>
+    </nav>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <div>
+      <span class="logo__name">Фин<span>Грамот</span></span>
+      <p>Простые материалы о безопасности денег в интернете и по телефону.</p>
+    </div>
+    <div>
+      <p><a href="index.html">Главная</a></p>
+      <p><a href="index.html#cycle">Все консультации</a></p>
+      <p><a href="index.html#contacts">Куда звонить</a></p>
+    </div>
+    <p class="footer__note">© 2026 ФинГрамот. Материалы носят справочный характер. Номера телефонов сверяйте с обратной стороны карты или с официальных сайтов.</p>
+  </div>
+</footer>
+
+<dialog class="dialog" id="access-dialog">
+  <form class="dialog__form" id="access-form">
+    <h2>Код доступа</h2>
+    <p>Введите код, который вам выдал консультант. Без него остальные консультации не открываются.</p>
+    <label for="code">Код доступа</label>
+    <input id="code" type="text" inputmode="numeric" autocomplete="off" required>
+    <p class="dialog__error" id="code-error" hidden>Код неверный. Проверьте цифры.</p>
+    <div class="dialog__btns">
+      <button class="btn btn--primary" type="submit">Открыть</button>
+      <button class="btn btn--ghost" type="button" data-close>Отмена</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>

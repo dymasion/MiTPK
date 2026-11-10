@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Банковская карта и безопасная покупка">
+  <rect width="480" height="300" rx="20" fill="#fff7d6"/>
+  <circle cx="60" cy="60" r="40" fill="#e3edf9"/>
+  <circle cx="430" cy="250" r="40" fill="#e3f3ea"/>
+
+  <!-- банковская карта -->
+  <g>
+    <rect x="60" y="90" width="230" height="140" rx="18" fill="#1f5fa8"/>
+    <rect x="60" y="118" width="230" height="26" fill="#143c6b"/>
+    <rect x="80" y="160" width="44" height="32" rx="6" fill="#ffd21f"/>
+    <path d="M80 176h44M92 160v32M106 160v32M120 160v32" stroke="#f0b400" stroke-width="2"/>
+    <text x="80" y="216" font-family="Consolas, monospace" font-size="18" letter-spacing="4" fill="#ffffff">•••• 4921</text>
+    <circle cx="262" cy="196" r="16" fill="#ffd21f"/>
+    <path d="M252 196a10 10 0 0 1 20 0" fill="none" stroke="#143c6b" stroke-width="3"/>
+    <path d="M252 196a10 10 0 0 0 20 0" fill="none" stroke="#c0392b" stroke-width="3"/>
+  </g>
+
+  <!-- оборот карты: CVV -->
+  <g>
+    <rect x="300" y="120" width="130" height="86" rx="14" fill="#143c6b"/>
+    <rect x="300" y="140" width="130" height="22" fill="#ffffff"/>
+    <rect x="314" y="146" width="70" height="10" rx="3" fill="#d5e0ee"/>
+    <rect x="392" y="144" width="26" height="14" rx="3" fill="#ffd21f"/>
+    <text x="405" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#143c6b">???</text>
+    <rect x="314" y="176" width="100" height="8" rx="4" fill="#3d6a9e"/>
+    <rect x="314" y="190" width="70" height="8" rx="4" fill="#3d6a9e"/>
+  </g>
+
+  <!-- корзина с галочкой -->
+  <g>
+    <path d="M150 236h180l-16 44H166z" fill="#0e6b3c"/>
+    <path d="M196 236a44 44 0 0 1 88 0" fill="none" stroke="#143c6b" stroke-width="8"/>
+    <path d="M224 258l12 12 22-24" fill="none" stroke="#ffd21f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

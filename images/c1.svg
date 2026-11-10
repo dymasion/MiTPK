@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Телефонный звонок мошенника">
+  <rect width="480" height="300" rx="20" fill="#e3edf9"/>
+  <circle cx="400" cy="60" r="46" fill="#fff7d6"/>
+  <circle cx="60" cy="250" r="34" fill="#e3f3ea"/>
+
+  <!-- телефон -->
+  <rect x="90" y="50" width="130" height="220" rx="24" fill="#143c6b"/>
+  <rect x="100" y="62" width="110" height="196" rx="16" fill="#ffffff"/>
+  <rect x="140" y="54" width="30" height="5" rx="2.5" fill="#0d2b4d"/>
+  <circle cx="155" cy="100" r="20" fill="#1f5fa8"/>
+  <path d="M147 104a8 8 0 0 1 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="155" cy="96" r="5.5" fill="#fff"/>
+  <rect x="120" y="132" width="70" height="8" rx="4" fill="#d5e0ee"/>
+  <rect x="130" y="148" width="50" height="8" rx="4" fill="#d5e0ee"/>
+  <circle cx="155" cy="216" r="17" fill="#ffd21f"/>
+  <path d="M162 216h-14m5 6l-6-6 6-6" stroke="#143c6b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- речевой пузырь мошенника -->
+  <g>
+    <path d="M250 70h170a14 14 0 0 1 14 14v56a14 14 0 0 1-14 14h-140l-24 22 4-22h-10a14 14 0 0 1-14-14V84a14 14 0 0 1 14-14z" fill="#ffffff" stroke="#ffd21f" stroke-width="4"/>
+    <path d="M268 100l14 26h-28z" fill="#ffd21f" stroke="#143c6b" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="266" y="110" width="3.5" height="9" rx="1.75" fill="#143c6b"/>
+    <circle cx="268" cy="122" r="2" fill="#143c6b"/>
+    <rect x="300" y="96" width="100" height="9" rx="4.5" fill="#143c6b"/>
+    <rect x="300" y="114" width="76" height="9" rx="4.5" fill="#d5e0ee"/>
+  </g>
+
+  <!-- пузырь-ответ -->
+  <g>
+    <path d="M430 200h-150a14 14 0 0 0-14 14v40a14 14 0 0 0 14 14h120l24 20-4-20h10a14 14 0 0 0 14-14v-40a14 14 0 0 0-14-14z" fill="#e3f3ea" stroke="#0e6b3c" stroke-width="4"/>
+    <path d="M296 234l12 12 22-24" fill="none" stroke="#0e6b3c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="344" y="228" width="66" height="9" rx="4.5" fill="#0e6b3c" opacity=".55"/>
+  </g>
+</svg>

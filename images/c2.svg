@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Надёжный пароль и код из SMS">
+  <rect width="480" height="300" rx="20" fill="#e3f3ea"/>
+  <circle cx="70" cy="60" r="40" fill="#fff7d6"/>
+  <circle cx="420" cy="250" r="40" fill="#e3edf9"/>
+
+  <!-- замок -->
+  <g>
+    <path d="M150 120v-26a40 40 0 0 1 80 0v26" fill="none" stroke="#143c6b" stroke-width="14"/>
+    <rect x="120" y="118" width="140" height="110" rx="18" fill="#1f5fa8"/>
+    <circle cx="190" cy="160" r="13" fill="#ffd21f"/>
+    <rect x="185" y="168" width="10" height="26" rx="5" fill="#ffd21f"/>
+  </g>
+
+  <!-- поле пароля -->
+  <g>
+    <rect x="290" y="96" width="150" height="56" rx="14" fill="#ffffff" stroke="#143c6b" stroke-width="4"/>
+    <circle cx="316" cy="124" r="8" fill="#143c6b"/>
+    <circle cx="342" cy="124" r="8" fill="#143c6b"/>
+    <circle cx="368" cy="124" r="8" fill="#143c6b"/>
+    <circle cx="394" cy="124" r="8" fill="#143c6b"/>
+    <rect x="290" y="176" width="150" height="56" rx="14" fill="#ffffff" stroke="#0e6b3c" stroke-width="4"/>
+    <rect x="308" y="196" width="34" height="16" rx="8" fill="#0e6b3c"/>
+    <rect x="350" y="196" width="34" height="16" rx="8" fill="#0e6b3c"/>
+    <rect x="392" y="196" width="34" height="16" rx="8" fill="#0e6b3c"/>
+  </g>
+
+  <!-- SMS-код -->
+  <g>
+    <rect x="60" y="200" width="180" height="70" rx="14" fill="#ffffff" stroke="#1f5fa8" stroke-width="4"/>
+    <rect x="76" y="216" width="70" height="9" rx="4.5" fill="#1f5fa8"/>
+    <rect x="76" y="236" width="52" height="18" rx="6" fill="#ffd21f"/>
+    <text x="102" y="251" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#143c6b">• • • •</text>
+    <rect x="140" y="236" width="84" height="9" rx="4.5" fill="#d5e0ee"/>
+  </g>
+</svg>

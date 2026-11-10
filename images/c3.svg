@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Проверка адреса сайта через увеличительное стекло">
+  <rect width="480" height="300" rx="20" fill="#e3edf9"/>
+  <circle cx="420" cy="60" r="44" fill="#fff7d6"/>
+  <circle cx="55" cy="255" r="30" fill="#e3f3ea"/>
+
+  <!-- окно браузера -->
+  <rect x="60" y="40" width="300" height="220" rx="16" fill="#ffffff" stroke="#143c6b" stroke-width="4"/>
+  <rect x="60" y="40" width="300" height="40" rx="16" fill="#1f5fa8"/>
+  <rect x="60" y="64" width="300" height="16" fill="#1f5fa8"/>
+  <circle cx="84" cy="60" r="6" fill="#ffd21f"/>
+  <circle cx="104" cy="60" r="6" fill="#e3f3ea"/>
+  <circle cx="124" cy="60" r="6" fill="#0e6b3c"/>
+  <!-- адресная строка -->
+  <rect x="76" y="94" width="268" height="30" rx="10" fill="#f2f6fb" stroke="#d5e0ee" stroke-width="2"/>
+  <circle cx="94" cy="109" r="7" fill="#0e6b3c"/>
+  <rect x="108" y="104" width="150" height="10" rx="5" fill="#143c6b"/>
+  <rect x="266" y="104" width="60" height="10" rx="5" fill="#c0392b" opacity=".85"/>
+  <!-- содержимое -->
+  <rect x="76" y="140" width="180" height="12" rx="6" fill="#d5e0ee"/>
+  <rect x="76" y="164" width="230" height="12" rx="6" fill="#d5e0ee"/>
+  <rect x="76" y="188" width="200" height="12" rx="6" fill="#d5e0ee"/>
+  <rect x="76" y="216" width="110" height="30" rx="10" fill="#ffd21f"/>
+
+  <!-- лупа -->
+  <g>
+    <circle cx="352" cy="196" r="52" fill="#ffffff" fill-opacity=".55" stroke="#0e6b3c" stroke-width="12"/>
+    <path d="M391 235l34 34" stroke="#0e6b3c" stroke-width="16" stroke-linecap="round"/>
+    <path d="M330 196l14 14 26-28" fill="none" stroke="#0e6b3c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
